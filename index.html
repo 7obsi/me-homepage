@@ -2,30 +2,121 @@
 <html class="back">
 
 <style>
-    h1{
-        color: white;
+    h1 {
+        color: black;
         font-family: "Times New Roman", Times, serif;
         font-size: 50px;
+        width: 50vw;
+        text-align: center;
+        z-index: 10;
     }
 
-    .center{
+    .center {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .back{
+    .back {
         background-color: black;
     }
 
+
+    h1:hover {
+        color: white;
+        animation: mystrobe 0.5s infinite;
+    }
+
+    img:hover {
+        display: inline;
+    }
+
+    @keyframes mystrobe {
+        0% {
+            background-color: white;
+        }
+
+        10% {
+            background-color: rgb(255, 0, 21);
+        }
+
+        20% {
+            background-color: rgb(0, 255, 55);
+        }
+
+        30% {
+            background-color: rgb(214, 9, 255);
+        }
+
+        40% {
+            background-color: rgb(10, 247, 255);
+        }
+
+        50% {
+            background-color: rgb(0, 255, 106);
+        }
+
+        60% {
+            background-color: rgb(0, 0, 0);
+        }
+
+        70% {
+            background-color: rgb(255, 255, 255);
+        }
+
+        80% {
+            background-color: rgb(2, 255, 23);
+        }
+
+        90% {
+            background-color: rgb(25, 0, 255);
+        }
+
+        100% {
+            background-color: rgb(0, 0, 0);
+        }
+    }
+
+    img {
+        width: auto;
+    }
+
+    img.fixed1 {
+        height: 350px;
+        position: fixed;
+        bottom: 50px;
+        left: 0;
+    }
+
+    img.fixed2 {
+        height: 340px;
+        position: fixed;
+        top: 0;
+        right: 400px;
+        z-index: 3;
+    }
+
+    img.fixed3 {
+        height: 500px;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+    }
+
+    .hide {
+        display: none;
+    }
 </style>
 
 <main>
 
-<div class="center">
-    <h1>Hi! I am Tobias Ellmauer.</h1>
-</div>
+    <div class="center">
+        <h1><br><br>Hi!<br>I am 7obsi.<br><br><br></h1>
+    </div>
+    <img src="me1.png" class="fixed1">
+    <img src="me2.png" class="fixed2">
+    <img src="me3.png" class="fixed3">
 
 </main>
 </hmtl>
